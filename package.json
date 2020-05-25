@@ -1,0 +1,35 @@
+{
+  "name": "vue3-ssr-playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ozguruysal/vue3-ssr-playground.git",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./server",
+    "build": "rimraf dist && npm run build:client && npm run build:server",
+    "build:client": "webpack --config build/webpack.client.js --hide-modules",
+    "build:server": "webpack --config build/webpack.server.js --hide-modules"
+  },
+  "dependencies": {
+    "@vue/server-renderer": "^3.0.0-beta.14",
+    "express": "^4.17.1",
+    "vue": "^3.0.0-beta.14",
+    "vue-bundle-renderer": "^0.0.3",
+    "vue-loader": "^16.0.0-beta.2",
+    "vue-router": "^4.0.0-alpha.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@vue/compiler-sfc": "^3.0.0-beta.14",
+    "babel-loader": "^8.1.0",
+    "chalk": "^4.0.0",
+    "cross-env": "^7.0.2",
+    "hash-sum": "^2.0.0",
+    "lodash.uniq": "^4.5.0",
+    "rimraf": "^3.0.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
