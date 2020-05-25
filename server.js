@@ -35,6 +35,7 @@ server.get("*", async (req, res) => {
   </head>
   <body>
     <div id="app">${content}</div>
+    <div id="endofbody"></div>
     ${context.renderScripts()}
   </body>
 </html>`;

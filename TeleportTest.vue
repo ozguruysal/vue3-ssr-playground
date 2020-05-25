@@ -12,6 +12,5 @@
         </div>
       </teleport>
     </div>
-    <div id="endofbody"></div>
   </div>
 </template>
