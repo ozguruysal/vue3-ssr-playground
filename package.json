@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@vue/server-renderer": "^3.0.0-beta.14",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "vue": "^3.0.0-beta.14",
     "vue-bundle-renderer": "^0.0.3",
     "vue-loader": "^16.0.0-beta.2",
